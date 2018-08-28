@@ -1,0 +1,533 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "cashier handles a purchase request",
+        "description": "",
+        "id": "cashier-flow;cashier-handles-a-purchase-request",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 745689587,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I have the request details",
+            "match": {
+              "location": "CashierSteps.i_have(Request\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "timeStamp",
+                  "id",
+                  "discount"
+                ],
+                "line": 6
+              },
+              {
+                "cells": [
+                  "02:00",
+                  "9",
+                  "20"
+                ],
+                "line": 7
+              },
+              {
+                "cells": [
+                  "03:00",
+                  "10",
+                  "10"
+                ],
+                "line": 8
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 70391,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I create a new tickets",
+            "match": {
+              "location": "CashierSteps.iCreateANewTicket()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4025967,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "The ticket should be",
+            "match": {
+              "location": "CashierSteps.theTicketShouldBe(Ticket\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "price",
+                  "entranceTime",
+                  "id"
+                ],
+                "line": 15
+              },
+              {
+                "cells": [
+                  "80",
+                  "02:00",
+                  "9"
+                ],
+                "line": 16
+              },
+              {
+                "cells": [
+                  "90",
+                  "03:00",
+                  "10"
+                ],
+                "line": 17
+              }
+            ],
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "cashier flow",
+    "description": "",
+    "id": "cashier-flow",
+    "keyword": "Feature",
+    "uri": "features/ChasierTest.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "senior enters the zoo flow",
+        "description": "",
+        "id": "senior-entrance-flow;senior-enters-the-zoo-flow",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 13064235,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I have senior details",
+            "match": {
+              "location": "SeniorEntranceSteps.i_have()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 22597975796,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I apply senior post entrance request",
+            "match": {
+              "location": "SeniorEntranceSteps.iApplySeniorPostEntranceRequest(Senior\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "id",
+                  "timeStamp",
+                  "age"
+                ],
+                "line": 7
+              },
+              {
+                "cells": [
+                  "5",
+                  "01:00",
+                  "65"
+                ],
+                "line": 8
+              },
+              {
+                "cells": [
+                  "6",
+                  "01:30",
+                  "70"
+                ],
+                "line": 9
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5784901,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "The senior ticket should be",
+            "match": {
+              "location": "SeniorEntranceSteps.theSeniorTicketShouldBe(Ticket\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "id",
+                  "entranceTime",
+                  "price"
+                ],
+                "line": 12
+              },
+              {
+                "cells": [
+                  "5",
+                  "01:00",
+                  "35"
+                ],
+                "line": 13
+              },
+              {
+                "cells": [
+                  "6",
+                  "01:30",
+                  "30"
+                ],
+                "line": 14
+              }
+            ],
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "senior entrance flow",
+    "description": "",
+    "id": "senior-entrance-flow",
+    "keyword": "Feature",
+    "uri": "features/SeniorEntersTheZoo.feature"
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "solider enters the zoo flow",
+        "description": "",
+        "id": "solider-enters-the-zoo-flow;solider-enters-the-zoo-flow",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4101478,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I have solider details",
+            "match": {
+              "location": "SoliderEntranceSteps.i_have()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 20426492716,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I apply solider post entrance request",
+            "match": {
+              "location": "SoliderEntranceSteps.iApplySoliderPostEntranceRequest(Solider\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "id",
+                  "timeStamp"
+                ],
+                "line": 8
+              },
+              {
+                "cells": [
+                  "1",
+                  "01:00"
+                ],
+                "line": 9
+              },
+              {
+                "cells": [
+                  "2",
+                  "01:30"
+                ],
+                "line": 10
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3176577,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "The solider ticket should be",
+            "match": {
+              "location": "SoliderEntranceSteps.theSoliderTicketShouldBe(Ticket\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "id",
+                  "entranceTime",
+                  "price"
+                ],
+                "line": 13
+              },
+              {
+                "cells": [
+                  "1",
+                  "01:00",
+                  "80"
+                ],
+                "line": 14
+              },
+              {
+                "cells": [
+                  "2",
+                  "01:30",
+                  "80"
+                ],
+                "line": 15
+              }
+            ],
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "solider enters the zoo flow",
+    "description": "",
+    "id": "solider-enters-the-zoo-flow",
+    "keyword": "Feature",
+    "uri": "features/SoliderEntersTheZoo.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "student enters the zoo flow",
+        "description": "",
+        "id": "student-entrance-flow;student-enters-the-zoo-flow",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4091240,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I have student details",
+            "match": {
+              "location": "StudentEntranceSteps.i_have()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 20162664093,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I apply student post entrance request",
+            "match": {
+              "location": "StudentEntranceSteps.iApplyStudentPostEntranceRequest(Student\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "id",
+                  "timeStamp"
+                ],
+                "line": 7
+              },
+              {
+                "cells": [
+                  "7",
+                  "01:00"
+                ],
+                "line": 8
+              },
+              {
+                "cells": [
+                  "8",
+                  "01:30"
+                ],
+                "line": 9
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 11751967,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "The student ticket should be",
+            "match": {
+              "location": "StudentEntranceSteps.theStudentTicketShouldBe(Ticket\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "id",
+                  "entranceTime",
+                  "price"
+                ],
+                "line": 12
+              },
+              {
+                "cells": [
+                  "7",
+                  "01:00",
+                  "90"
+                ],
+                "line": 13
+              },
+              {
+                "cells": [
+                  "8",
+                  "01:30",
+                  "90"
+                ],
+                "line": 14
+              }
+            ],
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "student entrance flow",
+    "description": "",
+    "id": "student-entrance-flow",
+    "keyword": "Feature",
+    "uri": "features/StudentEntersTheZoo.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "person enters the zoo flow",
+        "description": "",
+        "id": "visitor-entrance-flow;person-enters-the-zoo-flow",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3015742,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I have firstName, lastName, timeStamp, id",
+            "match": {
+              "location": "EntranceSteps.i_have()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 20198823567,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I apply post entrance request",
+            "match": {
+              "location": "EntranceSteps.iApplyPostEntersRequest(Visitor\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "id",
+                  "timeStamp"
+                ],
+                "line": 7
+              },
+              {
+                "cells": [
+                  "3",
+                  "01:00"
+                ],
+                "line": 8
+              },
+              {
+                "cells": [
+                  "4",
+                  "01:30"
+                ],
+                "line": 9
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5693179,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "The result should be",
+            "match": {
+              "location": "EntranceSteps.theResultShouldBeResult(Ticket\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "id",
+                  "entranceTime",
+                  "price"
+                ],
+                "line": 12
+              },
+              {
+                "cells": [
+                  "3",
+                  "01:00",
+                  "100"
+                ],
+                "line": 13
+              },
+              {
+                "cells": [
+                  "4",
+                  "01:30",
+                  "100"
+                ],
+                "line": 14
+              }
+            ],
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "visitor entrance flow",
+    "description": "",
+    "id": "visitor-entrance-flow",
+    "keyword": "Feature",
+    "uri": "features/VisitorEntersTheZoo.feature"
+  }
+]
